@@ -101,7 +101,7 @@ It's time consuming to type your password every time when using ssh or scp. One 
 
     * `/Users/<user-name>/.ssh/id_rsa` should be your own username, mine is sammypines.
 
-    * When see `Enter passphrass (empty for no passphrass):` and `Enter same passphrass (empty for no passphrass):`, just press **Enter** tab (DO NOT TYPE ANYTHING).
+    * When seeing **"Enter passphrass (empty for no passphrass):"** and **“Enter same passphrass (empty for no passphrass):”**, just press **Enter** tab (DO NOT TYPE ANYTHING).
 
     * `ssh cs15l...@ieng6.ucsd.edu` should be your own account. Also enter your own password.
 
