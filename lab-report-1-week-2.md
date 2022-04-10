@@ -99,7 +99,7 @@ It's time consuming to type your password every time when using ssh or scp. One 
 
 1. Type the following code in the terminal on your computer (**NOT THE SEVER**)
 
-    * `/Users/<user-name>/.ssh/id_rsa` should be your own username, mine is sammypines.
+    * `/Users/<user-name>/.ssh/id_rsa` should be your own username, mine is summerpines.
 
     * When seeing **"Enter passphrass (empty for no passphrass):"** and **“Enter same passphrass (empty for no passphrass):”**, just press **Enter** tab (DO NOT TYPE ANYTHING).
 
