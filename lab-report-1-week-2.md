@@ -65,7 +65,7 @@ Try running the commands `cd, ls, pwd, mkdir, and cp` a few times in different w
     ![comd6.png](comd6.png)
 4. mkdir: make directory
 
-    It will create a new directory, like `mkdir new dierctoryname`.
+    It will create a new directory, like `mkdir new directoryname`.
 
     ![comd7.png](comd7.png)
 
