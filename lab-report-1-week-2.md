@@ -108,16 +108,16 @@ It's time consuming to type your password every time when using ssh or scp. One 
     * Since I have done this before, it shows **"mkdir: cannot create directory '.ssh': File exists"**. The first time you type `mkdir .ssh`, it will create a new directory without showing this message.
 
         Later, when you want to re-try, you can remove using `rmdir .ssh/authorized_keys`, then re-copy your public key using `scp`.
-    * When typing `scp /Users/<user-name>/.ssh/id_rsa.pub cs15l...@ieng6.ucsd.edu:~/.ssh/authorized_keys`, remember to replace username and account on your own. **"id_rsa.pub"** stands for public key and is copy to server's authorized_keys directory.
+    * When typing `scp /Users/<user-name>/.ssh/id_rsa.pub cs15l...@ieng6.ucsd.edu:~/.ssh/authorized_keys`, remember to replace username and account on your own. **"id_rsa.pub"** stands for public key and is copied to server's authorized_keys directory.
 
     ![key1.png](key1.png)
 2. Open a new terminal, try `ssh cs15l...@ieng6.ucsd.edu`. This time, you should log in without entering the password.
     ![sshlog.png](sshlog.png)
 
 ### Step 6: Optimizing Remote Running
-Give it a try. Making a local edit to WhereAmI.java, then copying it to the remote server and running it.
+Give it a try. Make a local edit to WhereAmI.java, then copy it to the remote server and run it.
 
-One way to do it is:
+One way to do this is:
 ![optimize.png](optimize.png)
 
 * You could use **up** arrow tab to quickly call the code you have typed before.
