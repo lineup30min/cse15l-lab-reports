@@ -78,7 +78,7 @@ Try running the commands `cd, ls, pwd, mkdir, and cp` a few times in different w
 
     ![comd10.png](comd10.png)
 
-6. You could try more code by yourself `rm(remove), mv(move), or touch(create a file)`.
+6. You could try more code by yourself `rm`(remove), `mv`(move), or `touch`(create a file).
     ![comd11.png](comd11.png)
 
 ### Step 4: Moving Files with scp
