@@ -66,7 +66,7 @@ Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in dif
     ![comd7.png](comd7.png)
 
     ![comd8.png](comd8.png)
-5. `cp` copy
+5. `cp`: copy
 
     It will copy files to the directory. Try command like `cd filename directoryname`.
 
@@ -74,8 +74,9 @@ Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in dif
 
     ![comd10.png](comd10.png)
 
-6. You could try more code by yourself, like `rm`(remove), `mv`(move), or `touch`(create a file).
+6. You could try more code by yourself, like `rm`(remove), `mv`(move), or `touch`(create a file). You could also try `ls -lat`, which list all files in chronological order, including hidden files.
     ![comd11.png](comd11.png)
+    ![ls-lat.png](ls-lat.png)
 
 ### Step 4: Moving Files with scp
 There is a way to copy files from local systerm (your computer) to remote system, called `scp`(secure copy).
@@ -87,15 +88,16 @@ There is a way to copy files from local systerm (your computer) to remote system
     `scp WhereAmI.java cs15l...@ieng6.ucsd.edu:~/`
 
     Then you enter the password the same one as you log in with ssh.
-3. Log into your ieng6 with ssh again. Type `ls` to list files. You could see WhereAmI.java there. You could also run javac and java on file on the ieng6 computer.
+3. Log into your ieng6 with ssh again. Type `ls` to list files. You could see WhereAmI.java there. You could also run `javac` and `java` on file on the ieng6 computer.
     ![scp.png](scp.jpeg)
 
 ### Step 5: Setting an SSH Key
 It's time consuming to type your password every time when using ssh or scp. One way to save your time is **ssh keygen**. It creates a public and private keys which are stored on the server and client (lecture slide).
 
 1. Type the following code in the terminal on your computer (**NOT THE SEVER**)
+    ![key1.png](key1.png)
 
-    * `/Users/<user-name>/.ssh/id_rsa` should be your own username, mine is summerpines.
+    * `/Users/<user-name>/.ssh/id_rsa` should enter your own username, mine is summerpines.
 
     * When seeing **"Enter passphrass (empty for no passphrass):"** and **“Enter same passphrass (empty for no passphrass):”**, just press **Enter** tab (DO NOT TYPE ANYTHING).
 
@@ -106,7 +108,6 @@ It's time consuming to type your password every time when using ssh or scp. One 
         Later, when you want to re-try, you can remove using `rmdir .ssh/authorized_keys`, then re-copy your public key using `scp`.
     * When typing `scp /Users/<user-name>/.ssh/id_rsa.pub cs15l...@ieng6.ucsd.edu:~/.ssh/authorized_keys`, remember to replace username and account on your own. **"id_rsa.pub"** stands for public key and is copied to server's authorized_keys directory.
 
-    ![key1.png](key1.png)
 2. Open a new terminal, try `ssh cs15l...@ieng6.ucsd.edu`. This time, you should log in without entering the password.
     ![sshlog.png](sshlog.png)
 
