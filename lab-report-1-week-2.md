@@ -25,15 +25,11 @@ In CSE15L course, you will see how to connect your machine to a remote computer.
     ![connect3](connect3.png) 
 3. In the Terminal, type the following code (replace ... with your own ETS account):
 
-    `ssh cs15l...@ieng6.ucsd.edu `
+    `ssh cs15l...@ieng6.ucsd.edu`
 
-    It may pop up some questions like **"Are you sure you want to continue connecting (yes/no/[fingerprint])?**" for the first time. Type **yes** in the terminal to answer and press **Enter** tab.
+    It may pop up some questions like **"Are you sure you want to continue connecting (yes/no/[fingerprint])?**" for the first time. Type `yes` in the terminal to answer and press **Enter** tab.
 
-    Then it will show:
-
-    `Password: `
-
-    Type your password which related with your ETS account in the terminal. It's ok if you can't see your password; your password is being inputed. 
+    Then it will show **"Password: "**. Type your password which related with your ETS account in the terminal. It's ok if you can't see your password; your password is being inputed. 
     
     You should see something like this and your connection is successful:
     
@@ -41,36 +37,36 @@ In CSE15L course, you will see how to connect your machine to a remote computer.
 
     
 ### Step 3: Trying Some Commands
-Try running the commands `cd, ls, pwd, mkdir, and cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing.
+Try running the commands `cd, ls, pwd, mkdir,` and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing.
 
-1. cd: change directory
+1. `cd`: change directory
 
     It will change the current directory to the directory you enter; default is ~ (home directory).
     ![comd1.png](comd1.png)
 
     ![comd2.png](comd2.png)
 
-2. ls: list files
+2. `ls`: list files
 
     It will list all the contents in the current directory.
     ![comd3.png](comd3.png)
 
     ![comd4.png](comd4.png)
 
-3. pwd: print working directory
+3. `pwd`: print working directory
 
     It will print the current working directory in the terminal.
     ![comd5.png](comd5.png)
 
     ![comd6.png](comd6.png)
-4. mkdir: make directory
+4. `mkdir`: make directory
 
     It will create a new directory, like `mkdir new directoryname`.
 
     ![comd7.png](comd7.png)
 
     ![comd8.png](comd8.png)
-5. cp copy
+5. `cp` copy
 
     It will copy files to the directory, like `cd filename directoryname`.
 
@@ -91,7 +87,7 @@ There is a way to copy files from local systerm (your computer) to remote system
     `scp WhereAmI.java cs15l...@ieng6.ucsd.edu:~/`
 
     Then you enter the password the same one as you log in with ssh.
-3. Log into your ieng6 with ssh again. Type `ls` to list files. You could see WhereAmI.java there.
+3. Log into your ieng6 with ssh again. Type `ls` to list files. You could see WhereAmI.java there. You could also run javac and java on file on the ieng6 computer.
     ![scp.png](scp.jpeg)
 
 ### Step 5: Setting an SSH Key
@@ -124,7 +120,5 @@ One way to do this is:
 * `ssh cs15lsp22aji@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` use semicolns to run multiple commands on the same line, and directly run the command on the remote server. Remember to replace the account with your own one.
 
 ## That's all for the instruction. You did a great job!
-
-
 
      
