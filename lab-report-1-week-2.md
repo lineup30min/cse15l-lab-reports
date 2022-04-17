@@ -18,7 +18,7 @@ In CSE15L course, you will see how to connect your machine to a remote computer.
 
     Once you enter your username and PID, click on sumbit, you should see the following page:
     ![connect2](connect2.png) 
-    *cs15l...* is your specific ETS account for this course, the last three letters are different among students.
+    **cs15l...** is your specific ETS account for this course, the last three letters are different among students.
     
     You could keep your password, or click on **"change your password"** on the webpage to set up a new one.
 2. Then in VScode, open a new Terminal:
@@ -37,11 +37,11 @@ In CSE15L course, you will see how to connect your machine to a remote computer.
 
     
 ### Step 3: Trying Some Commands
-Try running the commands `cd, ls, pwd, mkdir,` and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing.
+Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing.
 
 1. `cd`: change directory
 
-    It will change the current directory to the directory you enter; default is ~ (home directory).
+    It will change the current directory to the directory you enter; default is `~` (home directory).
     ![comd1.png](comd1.png)
 
     ![comd2.png](comd2.png)
@@ -61,14 +61,14 @@ Try running the commands `cd, ls, pwd, mkdir,` and `cp` a few times in different
     ![comd6.png](comd6.png)
 4. `mkdir`: make directory
 
-    It will create a new directory, like `mkdir new directoryname`.
+    It will create a new directory. Try command like `mkdir new directoryname`.
 
     ![comd7.png](comd7.png)
 
     ![comd8.png](comd8.png)
 5. `cp` copy
 
-    It will copy files to the directory, like `cd filename directoryname`.
+    It will copy files to the directory. Try command like `cd filename directoryname`.
 
     ![comd9.png](comd9.png)
 
@@ -116,7 +116,7 @@ Give it a try. Make a local edit to WhereAmI.java, then copy it to the remote se
 One way to do this is:
 ![optimize.png](optimize.png)
 
-* You could use **up** arrow tab to quickly call the code you have typed before.
+* You could use **Up** arrow tab to quickly call the code you have typed before.
 * `ssh cs15lsp22aji@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` use semicolns to run multiple commands on the same line, and directly run the command on the remote server. Remember to replace the account with your own one.
 
 ## That's all for the instruction. You did a great job!
