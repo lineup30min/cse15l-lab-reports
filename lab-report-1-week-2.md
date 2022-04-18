@@ -121,5 +121,5 @@ One way to do this is:
 * `ssh cs15lsp22aji@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` use semicolns to run multiple commands on the same line, and directly run the command on the remote server. Remember to replace the account with your own one.
 
 ## That's all for the instruction. You did a great job!
-
      
+[Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
