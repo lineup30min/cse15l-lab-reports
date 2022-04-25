@@ -36,3 +36,5 @@ I add an if statement to check whether the test-file contains open bracket `(`, 
 The failure-inducing input, test-file-3, is a file with an image reference. It shouldn't print out the link. When running the commands in **MarkdownParse.java**, the exclamation sign doesn't have effects, so the wrong answer `[me.png]` is printed out. 
 
 I add an if statement that if there exsits `exclamation` (exclamation sign) before `openBracket`. If it does, break the while loop, and print out empty arraylist.
+
+[Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
