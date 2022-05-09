@@ -28,11 +28,11 @@ Use `git push` to push changes to GitHub
 ### 1. Show copying my whole markdown-parse directory to my ieng6 account:
 ![311.pmg](311.png)
 ![312.pmg](312.png)
-*To have more control over what gets copied, use `scp -r *.java *.md lib/ cs15lsp22aji@ieng6.ucsd.edu:markdown-parse` to copy only md and java file*
+**To have more control over what gets copied, use `scp -r *.java *.md lib/ cs15lsp22aji@ieng6.ucsd.edu:markdown-parse` to copy only md and java file*
 ![313.pmg](313.png)
 ### 2. Show logging into my ieng6 account after doing above and compiling and running the tests for my repository:
 ![32.pmg](32.png)
-### 3. Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line:
+### 3. Show (like in the last step of the first lab) combining `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line:
 ![33.pmg](33.png)
 
 [Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
