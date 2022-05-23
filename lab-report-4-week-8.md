@@ -34,7 +34,7 @@ For MarkdownParseTest.java I reviewed in Week 7:
 ![rf1.png](rf1.png)
 
 ### 6. Is there a small (<10 lines) code change that will make my program work for snippet 1 and all related cases that use inline code with backticks?
-I think it would be a more involved change. Since snippet 1 is not only about backticks, it has more than one openbracket or closebracket for the last two lines. It may be easy to check for the paired backticks by adding ```int backtick = markdown.indexOf("`", currentIndex);``` and if-statement, then if the paired backticks are both inside the paired brackets, cout it as a valid link. However, to check for the paired bracket, it needs to add more code.
+I think it would be a more involved change. Since snippet 1 is not only about backticks, it has more than one openbracket or closebracket for the last two cases. It may be a small code change to check for the paired backticks by adding ```int backtick = markdown.indexOf("`", currentIndex);``` and if-statement, then if the paired backticks are both inside the paired brackets, cout it as a valid link. However, to check for the paired bracket, it needs to add more commands.
 
 ---
 ## Snippet 2:
@@ -64,7 +64,7 @@ For MarkdownParseTest.java I reviewed in Week 7:
 ![rf2.png](rf2.png)
 
 ### 6. Is there a small (<10 lines) code change that will make my program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets?
-I think it would be a more involved change. Since there are nested parentheses and brackets, I might write a while loop to keep track of all the brackets until I find the last close bracket, and similar for the parentheses. I might create a stack--whenever I find a open bracket I push into it, and whenever I find a close bracket I pop from stack--printing everything between the first open parenthesis and last close parethesis as a valid link. I also need to define `int slash` to find escaped brackets.
+I think it would be a more involved change. Since there are nested parentheses and brackets, I have to keep track of all the brackets until I find the last close bracket, and similar for the parentheses. I might create a stack--whenever I find a open bracket I push into it, and whenever I find a close bracket I pop from stack--printing everything between the first open parenthesis and last close parethesis as a valid link. I also need to define `int slash` to find `\[` and `\]` for escaped brackets.
 
 ---
 ## Snippet 3:
