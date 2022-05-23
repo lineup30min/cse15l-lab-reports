@@ -34,7 +34,7 @@ For MarkdownParseTest.java I reviewed in Week 7:
 ![rf1.png](rf1.png)
 
 ### 6. Is there a small (<10 lines) code change that will make my program work for snippet 1 and all related cases that use inline code with backticks?
-I think it would be a more involved change. Since snippet 1 is not only about backticks, it has more than one openbracket or closebracket for the last two cases. It may be a small code change to check for the paired backticks by adding ```int backtick = markdown.indexOf("`", currentIndex);``` and if-statement, then if the paired backticks are both inside the paired brackets, cout it as a valid link. However, to check for the paired bracket, it needs to add more commands.
+I think it would be a more involved change. Since snippet 1 is not only about backticks, it has more than one openbracket or closebracket for the last two cases. It may be a small code change to check for the paired backticks by adding ```int backtick = markdown.indexOf("`", currentIndex);``` and if-statement, then if the paired backticks are both inside the paired brackets, cout it as a valid link. However, to check for the paired brackets, it needs to add more commands.
 
 ---
 ## Snippet 2:
