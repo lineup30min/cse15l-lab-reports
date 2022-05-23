@@ -22,8 +22,10 @@
 ### 3. Showing how I turned the code into a test:
 test file for snippet1:
 ![s1t2.png](s1t2.png)
+
 For my MarkdownParseTest.java:
 ![s1t1.png](s1t1.png)
+
 For MarkdownParseTest.java I reviewed in Week 7:
 ![rs1t1.png](rs1t1.png)
 
@@ -52,8 +54,10 @@ I think it would be a more involved change. Since snippet 1 is not only about ba
 ### 3. Showing how I turned the code into a test:
 test file for snippet2:
 ![s2t2.png](s2t2.png)
+
 For my MarkdownParseTest.java:
 ![s2t1.png](s2t1.png)
+
 For MarkdownParseTest.java I reviewed in Week 7:
 ![rs2t1.png](rs2t1.png)
 
@@ -101,8 +105,10 @@ And then there's more text
 ### 3. Showing how I turned the code into a test:
 test file for snippet3:
 ![s3t2.png](s3t2.png)
+
 For my MarkdownParseTest.java:
 ![s3t1.png](s3t1.png)
+
 For MarkdownParseTest.java I reviewed in Week 7:
 ![rs3t1.png](rs3t1.png)
 
