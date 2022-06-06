@@ -16,18 +16,23 @@ In this way, I found the tests with different results line by line.
 Provide a link to the test-file 518.md: [518.md](https://github.com/lineup30min/lab9/blob/main/518.md)
 
 518.md:
+
 ![5181.png](5181.png)
 
 518.html.test:
+
 ![5182.png](5182.png)
 
 Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
+
 ![518output.png](518output.png)
 
 My actual output:
+
 ![518me.png](518me.png)
 
 Lab9 actual output:
+
 ![518ot.png](518ot.png)
 
 So it seems that both give the wrong output.
@@ -39,22 +44,27 @@ I choose my code to fix.
 Provide a link to the test-file 566.md: [566.md](https://github.com/lineup30min/lab9/blob/main/566.md)
 
 566.md:
+
 ![5661.png](5661.png)
 
 566.html.test:
+
 ![5662.png](5662.png)
 
 Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
+
 ![566output.png](566output.png)
 
 My actual output:
+
 ![566me.png](566me.png)
 
 Lab9 actual output:
+
 ![566ot.png](566ot.png)
 
 So it seems that both give the wrong output.
 
-[Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
-
 I choose my code to fix.
+
+[Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
