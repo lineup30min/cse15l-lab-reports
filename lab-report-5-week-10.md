@@ -32,7 +32,8 @@ Lab9 actual output:
 
 So it seems that both give the wrong output.
 
-I choose my code. 
+I choose my code to fix.
+
 ---
 ## Second different result:
 Provide a link to the test-file 566.md: [566.md](https://github.com/lineup30min/lab9/blob/main/566.md)
@@ -55,3 +56,5 @@ Lab9 actual output:
 So it seems that both give the wrong output.
 
 [Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
+
+I choose my code to fix.
