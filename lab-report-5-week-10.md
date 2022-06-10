@@ -1,6 +1,6 @@
 # **Week 10 Lab Report5**
 ## I have found the tests with different results:
-![vim1.jpg](vim1.jpg)
+![all.png](all.png)
 First I clone the repository as **cse15lsp22-markdown-parser** on my ieng6 account use `git clone`. I run `make test` and `bash script.sh > results.txt` to let output to go to a file in this repository.
 
 Then I clone my latest markdown-parser in my home directory on ieng6, and name it **latest-markdown-parse**. Next I copy `script.sh` and `test-files/` into this repository. I run `make test`, and `bash script.sh > results.txt` in this repostiry.
@@ -13,58 +13,78 @@ In this way, I found the tests with different results line by line.
 
 ---
 ## First different result:
-Provide a link to the test-file 518.md: [518.md](https://github.com/lineup30min/lab9/blob/main/518.md)
+### 1. Provide a link to the test-file 519.md: [519.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/519.md)
 
-518.md:
+519.md:
 
-![5181.png](5181.png)
+![5191.png](5191.png)
 
-518.html.test:
+519.html.test:
 
-![5182.png](5182.png)
+![5192.png](5192.png)
 
-Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
+### 2. Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
 
-![518output.png](518output.png)
+![519cm.png](519cm.png)
 
-My actual output:
+Since there is an exclamation mark before the first open bracket, it should be regarded as an image, not a link. The expected output would be [].
 
-![518me.png](518me.png)
+### 3. My actual output:
 
-Lab9 actual output:
+![519me2.png](519me2.png)
 
-![518ot.png](518ot.png)
+![519me.jpg](519me.jpg)
 
-So it seems that both give the wrong output.
+### 4. Lab9 actual output:
 
-I choose my code to describe the bug. 
+![519ot2.png](519ot2.png)
+
+![519ot.jpg](519ot.jpg)
+
+### 5. Describe the correctness of implementation and the bug, with code snippet that needs to be changed
+
+My implementation is correct since it's not a valid link, while Lab9 is not correct. 
+
+As code snippet shown below, the problem is that it didn't check whether there is an exclamation mark before `nextOpenBracket`. I would add an if-statement like ```if(exclamation < nextOpenBracket && exclamation != -1)``` below the last line to break out of the while loop when there exists an exclamation right before a open bracket.
+
+![codechange1.png](codechange1.png)
 
 ---
 ## Second different result:
-Provide a link to the test-file 566.md: [566.md](https://github.com/lineup30min/lab9/blob/main/566.md)
+### 1. Provide a link to the test-file 510.md: [510.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/510.md)
 
-566.md:
+510.md:
 
-![5661.png](5661.png)
+![5101.png](5101.png)
 
-566.html.test:
+510.html.test:
 
-![5662.png](5662.png)
+![5102.png](5102.png)
 
-Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
+### 2. Expected output using the [CommonMark demo site](https://spec.commonmark.org/dingus/):
 
-![566output.png](566output.png)
+![510cm.png](510cm.png)
 
-My actual output:
+Since there is a space between close bracket and open parenthesis, it is not a valid link. The expected output would be [].
 
-![566me.png](566me.png)
+### 3. My actual output:
 
-Lab9 actual output:
+![510me2.png](510me2.png)
 
-![566ot.png](566ot.png)
+![510me.jpg](510me.jpg)
 
-So it seems that both give the wrong output.
+### 4. Lab9 actual output:
 
-I choose my code to fix.
+![510ot2.png](510ot2.png)
+
+![510ot.jpg](510ot.jpg)
+
+### 5. Describe the correctness of implementation and the bug, with code snippet that needs to be changed
+
+My implementation is correct since it's not a valid link, while Lab9 is not correct. 
+
+As code snippet shown below, the problem is that it didn't check whether there is an space between the last close bracket and first open parenthesis. It might need a helper method to find the last close bracket in nested brackets. I would also add an if-statement like ```if(nextCloseBracket + 1 != openParen)``` below the second line to break out of the while loop when there exists space between the close bracket and open parenthesis.  
+
+![codechange2.png](codechange2.png)
 
 [Return to index](https://lineup30min.github.io/cse15l-lab-reports/)
