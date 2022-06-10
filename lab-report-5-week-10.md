@@ -37,7 +37,7 @@ Lab9 actual output:
 
 So it seems that both give the wrong output.
 
-I choose my code to fix.
+I choose my code to describe the bug. 
 
 ---
 ## Second different result:
