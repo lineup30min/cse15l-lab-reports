@@ -45,7 +45,7 @@ Since there is an exclamation mark before the first open bracket, it should be r
 
 My implementation is correct since it's not a valid link, while Lab9 is not correct. 
 
-As code snippet shown below, the problem is that it didn't check whether there is an exclamation mark before `nextOpenBracket`. I would add an if-statement like ```if(exclamation < nextOpenBracket && exclamation != -1)``` below the last line to break out of the while loop when there exists an exclamation right before a open bracket.
+As code snippet shown below, the problem is that it didn't check whether there is an exclamation mark before `nextOpenBracket`. It simply looks for the open bracket and intends to find backticks. I would add an if-statement like ```if(exclamation < nextOpenBracket && exclamation != -1)``` below the last line to break out of the while loop when there exists an exclamation right before a open bracket.
 
 ![codechange1.png](codechange1.png)
 
@@ -83,7 +83,7 @@ Since there is a space between close bracket and open parenthesis, it is not a v
 
 My implementation is correct since it's not a valid link, while Lab9 is not correct. 
 
-As code snippet shown below, the problem is that it didn't check whether there is an space between the last close bracket and first open parenthesis. It might need a helper method to find the last close bracket in nested brackets. I would also add an if-statement like ```if(nextCloseBracket + 1 != openParen)``` below the second line to break out of the while loop when there exists space between the close bracket and open parenthesis.  
+As code snippet shown below, the problem is that it didn't check whether there is an space between the last close bracket and first open parenthesis. It simply finds the brackets without considering the spaces, or other signs. It might need a helper method to find the last close bracket in nested brackets. I would also add an if-statement like ```if(nextCloseBracket + 1 != openParen)``` below the second line to break out of the while loop when there exists space between the close bracket and open parenthesis.  
 
 ![codechange2.png](codechange2.png)
 
